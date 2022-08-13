@@ -1,0 +1,42 @@
+---
+layout: default
+title: home
+list_title: asdasdasd
+---
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script type="text/javascript">
+  var map;
+
+  DG.then(function () {
+    map = DG.map("map", {
+      center: [43.356563, 77.137526],
+      zoom: 18,
+      firm: 70000001055449990
+    });
+
+    DG.marker([43.356563, 77.137526]).addTo(map);
+
+    var options = {vectors: [
+      "LINESTRING(77.137696 43.356463,77.137566 43.356553)",
+    ]};
+    DG.entrance(options).addTo(map).show(true);
+  });
+</script>
+<div class="home">
+  <h2>Детский сад "Умняшка"</h2>
+  <p>
+    <ul>
+      <li>Возрастные группы:младшая группа "Непоседы" от 2-х до 3-х лет</li>
+      <li>Средневозрастная "Почемучки" - от 3 до 5-ти лет Предшкольная группа</li>
+      <li>"Умняшки" -от 5 до 6-ти лет</li>
+  </ul>
+  </p>
+  <p>Детский сад с проектной мощностью 60 детей. Общая площадь 383,6 кв.м.</p>
+  <h2>
+    Юридический адрес:
+  </h2>
+  <p>
+    город Алматы Медеуский район микрорайон Алатау улица Ибрагимова 105.
+  </p>
+  <div id="map" style="width:500px; height:400px"></div>
+</div>
