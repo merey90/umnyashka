@@ -22,7 +22,7 @@ title: Umnyashka
 email: merey.90@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Umnyashka - kindergarten located in Almaty, Kazakhstan.
-baseurl: "/umnyashka" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "merey90.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: merey90
